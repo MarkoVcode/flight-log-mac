@@ -1,5 +1,3 @@
-import React from 'react';
-//@ts-ignore
 import { createRoot } from 'react-dom/client';
 import CssBaseline from '@mui/material/CssBaseline';
 import { ThemeProvider } from '@mui/material/styles';
@@ -10,8 +8,9 @@ import '@fontsource/roboto/300.css';
 import '@fontsource/roboto/400.css';
 import '@fontsource/roboto/500.css';
 import '@fontsource/roboto/700.css';
+import './index.css'
 
-//require('nw.gui').Window.get().showDevTools();
+require('nw.gui').Window.get().showDevTools();
 
 const rootElement = document.getElementById('root');
 const root = createRoot(rootElement!);
@@ -20,12 +19,10 @@ root.render(
   <ThemeProvider theme={theme}>
     {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
     <CssBaseline />
+    <div id="config-modal"/>
     <App />
-  </ThemeProvider>,
+  </ThemeProvider>
 );
-
-    //{/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
-    //<CssBaseline /> <App />
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
