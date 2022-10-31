@@ -1,4 +1,11 @@
 {
+  "additional_trust_anchors": [],
+  "app_name": "hello",
+  "author": "hello",
+  "license": "hello",
+  "node": true,
+  "nodejs": true,
+  "single-instance": true,
   "name": "flight-log-test-mac",
   "version": "0.1.0",
   "private": true,
@@ -62,5 +69,27 @@
   "devDependencies": {
     "@types/react-dom": "^18.0.6",
     "@types/styled-components": "^5.1.26"
-  }
+  },
+  "window": {
+    "always_on_top": false,
+    "as_desktop": false,
+    "exe_icon": "logo192.png",
+    "frame": true,
+    "fullscreen": false,
+    "height": 768,
+    "icon": "logo192.png",
+    "id": "test-icon",
+    "kiosk": false,
+    "kiosk_emulation": false,
+    "position": "center",
+    "resizable": true,
+    "show": true,
+    "show_in_taskbar": true,
+    "title": "test-icon",
+    "toolbar": false,
+    "transparent": false,
+    "visible": true,
+    "visible_on_all_workspaces": false,
+    "width": 1024
+}
 }
